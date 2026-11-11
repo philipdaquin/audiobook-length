@@ -1,0 +1,62 @@
+"""Estimate listening time from a word count, text, or EPUB."""
+
+from .calc import (
+    DEFAULT_DAILY_MINUTES,
+    DEFAULT_NARRATION_WPM,
+    DEFAULT_READING_WPM,
+    DEFAULT_SPEED,
+    DEFAULT_WORDS,
+    DEFAULT_WORDS_PER_PAGE,
+    FICTION_READING_WPM,
+    MAX_NARRATION_WPM,
+    MAX_WORDS,
+    MIN_NARRATION_WPM,
+    MIN_WORDS,
+    PLAYBACK_SPEEDS,
+    WORDS_PER_PAGE_OPTIONS,
+    Estimate,
+    clamp_words,
+    days_at_pace,
+    estimate,
+    format_days,
+    format_duration,
+    listening_minutes,
+    reading_minutes,
+    round_output_minutes,
+    round_words_to_nearest_thousand,
+    words_from_pages,
+)
+from .epub import EpubError, words_from_epub
+from .text import words_from_text
+
+__all__ = [
+    "DEFAULT_DAILY_MINUTES",
+    "DEFAULT_NARRATION_WPM",
+    "DEFAULT_READING_WPM",
+    "DEFAULT_SPEED",
+    "DEFAULT_WORDS",
+    "DEFAULT_WORDS_PER_PAGE",
+    "EpubError",
+    "Estimate",
+    "FICTION_READING_WPM",
+    "MAX_NARRATION_WPM",
+    "MAX_WORDS",
+    "MIN_NARRATION_WPM",
+    "MIN_WORDS",
+    "PLAYBACK_SPEEDS",
+    "WORDS_PER_PAGE_OPTIONS",
+    "clamp_words",
+    "days_at_pace",
+    "estimate",
+    "format_days",
+    "format_duration",
+    "listening_minutes",
+    "reading_minutes",
+    "round_output_minutes",
+    "round_words_to_nearest_thousand",
+    "words_from_epub",
+    "words_from_pages",
+    "words_from_text",
+]
+
+__version__ = "0.1.0"

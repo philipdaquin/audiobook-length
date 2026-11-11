@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audiobook-length"
+version = "0.1.0"
+description = "Estimate listening time from a word count, plain text, or EPUB, using the same formula as the calculator on the CocoReader landing page (cocoreader.cc)."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Philip", email = "outreach@cocoreader.cc" },
+]
+maintainers = [
+    { name = "Philip", email = "outreach@cocoreader.cc" },
+]
+requires-python = ">=3.9"
+keywords = ["audiobook", "epub", "listening-time", "wpm", "cocoreader"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Text Processing",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://www.cocoreader.cc/tools/audiobook-length-calculator"
+"CocoReader" = "https://www.cocoreader.cc"
+
+[project.scripts]
+audiobook-length = "audiobook_length.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
